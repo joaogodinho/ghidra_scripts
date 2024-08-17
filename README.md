@@ -7,6 +7,8 @@ Emulates the selected code using Unicorn. Tested in x86 and x64.
 
 The script was developed to emulate the selected assembly and display all the registers that were changed during emulation, as well as any changes in the stack.
 
+**This can only emulate pure assembly, any library calls will fail.**
+
 ### Requirements
 
 - [Ghidrathon](https://github.com/mandiant/Ghidrathon) (for Python 3 support)
@@ -19,7 +21,7 @@ The script was developed to emulate the selected assembly and display all the re
 
 ### Usage
 
-1. Start by selection the assembly to emulate in the Listing window, as shown below:
+1. Select the assembly to emulate in the Listing window.
 2. Press `F5` or go to `jcfg -> ByteRunner`.
 3. In the Console window the script will print the addresses that will be emulated, followed by any registers that were changed during emulation, followed by an hex dump of any stack changes.
 
